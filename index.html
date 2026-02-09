@@ -2400,4 +2400,16 @@
         dots.forEach((dot, index) => {
             dot.addEventListener('click', () => {
                 clearInterval(carouselInterval);
-                showSlide(index)
+                showSlide(index);
+                startCarousel();
+            });
+        });
+
+        // Start carousel on page load
+        if (slides.length > 0) {
+            startCarousel();
+        }
+
+    </script>
+</body>
+</html>

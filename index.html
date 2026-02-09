@@ -1081,6 +1081,119 @@
             font-size: 0.95rem;
         }
 
+        .hobbies-intro {
+            max-width: 700px;
+            margin: 0 auto 50px;
+            text-align: center;
+        }
+
+        .hobbies-intro p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-color);
+        }
+
+        .hobbies-intro strong {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .hobby-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 15px;
+            color: var(--primary-color);
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .hobby-link:hover {
+            color: var(--primary-dark);
+            gap: 10px;
+        }
+
+        .hobby-link i {
+            font-size: 0.8rem;
+            transition: transform 0.3s ease;
+        }
+
+        .hobby-link:hover i {
+            transform: translateX(3px);
+        }
+
+        /* Past Hobbies Section */
+        .past-hobbies {
+            margin-top: 60px;
+            padding-top: 50px;
+            border-top: 2px dashed rgba(37, 99, 235, 0.2);
+        }
+
+        .past-hobbies-title {
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .past-hobbies-subtitle {
+            text-align: center;
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .past-hobbies-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .past-hobby-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 20px;
+            background: var(--bg-alt);
+            border-radius: 50px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .past-hobby-item:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.15);
+        }
+
+        .past-hobby-icon {
+            font-size: 1.3rem;
+        }
+
+        .past-hobby-name {
+            font-weight: 500;
+            color: var(--secondary-color);
+        }
+
+        .past-hobby-badge {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+            color: white;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
         /* ============================================
            CONTACT SECTION
            ============================================ */
@@ -2085,6 +2198,17 @@
                 <h2 class="section-title">Hobbies & Interests</h2>
                 <div class="section-line"></div>
             </div>
+            
+            <!-- Serial Hobby Enthusiast Intro -->
+            <div class="hobbies-intro">
+                <p>
+                    I'm a <strong>serial hobby enthusiast</strong> — always exploring new passions! 🌟 
+                    From getting lost in books to nurturing my little garden, discovering cozy cafes, 
+                    and experimenting in the kitchen, I believe life's too short to have just one interest. 
+                    Each hobby teaches me something new and keeps the creative spark alive!
+                </p>
+            </div>
+            
             <div class="hobbies-grid">
                 <div class="hobby-card">
                     <div class="hobby-icon">
@@ -2092,8 +2216,11 @@
                     </div>
                     <h3 class="hobby-title">Reading</h3>
                     <p class="hobby-description">
-                        Love exploring new ideas through books, from AI research papers to fiction.
+                        Love exploring new ideas through books — from AI research papers to self-help and fiction. Currently tracking my reads!
                     </p>
+                    <a href="https://www.notion.so/Books-Articles-Podcasts-Essays-302d6ba7b8628092aca9f0f8f44c3a34" target="_blank" class="hobby-link">
+                        See My Reading List <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
                 <div class="hobby-card">
                     <div class="hobby-icon">
@@ -2101,7 +2228,7 @@
                     </div>
                     <h3 class="hobby-title">Cafe Hopping</h3>
                     <p class="hobby-description">
-                        Discovering cozy cafes and enjoying good coffee in new places.
+                        There's nothing like a cozy corner, good coffee, and a new book. Always on the hunt for hidden gems in Dublin and beyond!
                     </p>
                 </div>
                 <div class="hobby-card">
@@ -2110,7 +2237,7 @@
                     </div>
                     <h3 class="hobby-title">Gardening</h3>
                     <p class="hobby-description">
-                        Finding peace in nurturing plants and watching them grow.
+                        My little balcony garden is my happy place. Growing herbs, succulents, and learning patience one plant at a time 🌿
                     </p>
                 </div>
                 <div class="hobby-card">
@@ -2119,8 +2246,33 @@
                     </div>
                     <h3 class="hobby-title">Cooking</h3>
                     <p class="hobby-description">
-                        Experimenting with recipes and creating delicious meals.
+                        Experimenting with Indian recipes abroad and trying cuisines from around the world. Food is love! 🍲
                     </p>
+                </div>
+            </div>
+            
+            <!-- Past Hobbies Section -->
+            <div class="past-hobbies">
+                <p class="past-hobbies-title">Things I've Dabbled In 🎯</p>
+                <p class="past-hobbies-subtitle">Proof that I'll try anything at least once!</p>
+                <div class="past-hobbies-grid">
+                    <div class="past-hobby-item">
+                        <span class="past-hobby-icon">🥋</span>
+                        <span class="past-hobby-name">Taekwondo</span>
+                        <span class="past-hobby-badge">Blue Belt</span>
+                    </div>
+                    <div class="past-hobby-item">
+                        <span class="past-hobby-icon">🧶</span>
+                        <span class="past-hobby-name">Knitting</span>
+                    </div>
+                    <div class="past-hobby-item">
+                        <span class="past-hobby-icon">🎾</span>
+                        <span class="past-hobby-name">Squash</span>
+                    </div>
+                    <div class="past-hobby-item">
+                        <span class="past-hobby-icon">📸</span>
+                        <span class="past-hobby-name">Instagram Blogging</span>
+                    </div>
                 </div>
             </div>
         </div>

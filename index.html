@@ -128,7 +128,7 @@
         .nav-link {
             color: var(--text-color);
             font-weight: 600;
-            font-size: 0.95rem;
+            font-size: 1.15rem;
             position: relative;
             padding: 5px 0;
         }
@@ -175,7 +175,11 @@
            ============================================ */
         .hero {
             min-height: 100vh;
-            background: linear-gradient(135deg, #e8eaf6 0%, #e3e7f7 50%, #dfe4f5 100%);
+            background: linear-gradient(135deg, rgba(232, 234, 246, 0.9) 0%, rgba(227, 231, 247, 0.85) 50%, rgba(223, 228, 245, 0.9) 100%),
+                        url('images/hero-bg.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -2121,7 +2125,7 @@
                     </div>
                     
                     <div class="quick-links">
-                        <a href="mailto:gargi9513@gmail.com" class="quick-link">
+                        <a href="/cdn-cgi/l/email-protection#4e292f3c2927777b7f7d0e29232f2722602d2123" class="quick-link">
                             <i class="fa-solid fa-envelope"></i> Email
                         </a>
                         <a href="https://www.linkedin.com/in/gargi-gupta-025467108/" target="_blank" class="quick-link">
@@ -2199,7 +2203,7 @@
     </footer>
 
     <!-- ==================== JAVASCRIPT ==================== -->
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         // ===== Navbar Scroll Effect =====
         const navbar = document.getElementById('navbar');
         window.addEventListener('scroll', () => {
@@ -2396,14 +2400,4 @@
         dots.forEach((dot, index) => {
             dot.addEventListener('click', () => {
                 clearInterval(carouselInterval);
-                showSlide(index);
-                startCarousel();
-            });
-        });
-
-        // Start the carousel
-        startCarousel();
-    </script>
-
-</body>
-</html>
+                showSlide(index)

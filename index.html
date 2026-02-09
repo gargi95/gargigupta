@@ -382,7 +382,7 @@
 
         .section-header {
             text-align: center;
-            margin-bottom: 60px;
+            margin-bottom: 40px;
         }
 
         .section-subtitle {
@@ -446,8 +446,33 @@
         }
 
         .about-text p {
-            color: var(--text-light);
+            color: #000000;
             margin-bottom: 20px;
+        }
+
+        .about-bullets {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .about-bullets li {
+            color: #000000;
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .about-bullets li::before {
+            content: '•';
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            top: -2px;
         }
 
         .about-highlights {
@@ -1580,12 +1605,15 @@
                 </div>
                 <div class="about-text">
                     <h3>PhD Researcher in Explainable Artificial Intelligence (XAI)</h3>
-                    <p>
-                        I am a PhD researcher in Explainable Artificial Intelligence (XAI) at Technological University Dublin, funded by the Science Foundation Ireland (SFI) Centre for Research Training in Machine Learning. My research focuses on opening the black box of recurrent neural networks, particularly LSTM models for univariate time-series classification. I design post-hoc explanation frameworks that combine attribution-based XAI methods with symbolic state-transition representations, enabling both local and global interpretability of model decisions.
-                    </p>
-                    <p>
-                        I have hands-on experience building end-to-end ML pipelines using Python and PyTorch, applying XAI techniques such as SHAP, DeepLIFT, Integrated Gradients, and Saliency Maps. Beyond academia, I have industry experience as a Data Science Intern at Shutterstock (Dublin), investigating explainability of CLIP models for generative AI. I actively contribute to the AI community through invited talks at University of Galway, PyLadies Dublin, and publications on AI Ireland.
-                    </p>
+                    <ul class="about-bullets">
+                        <li>PhD researcher in Explainable AI at Technological University Dublin, funded by Science Foundation Ireland (SFI) Centre for Research Training in Machine Learning</li>
+                        <li>Research focuses on opening the black box of recurrent neural networks, particularly LSTM models for univariate time-series classification</li>
+                        <li>Design post-hoc explanation frameworks combining attribution-based XAI methods with symbolic state-transition representations</li>
+                        <li>Hands-on experience building end-to-end ML pipelines using Python and PyTorch</li>
+                        <li>Expert in XAI techniques: SHAP, DeepLIFT, Integrated Gradients, and Saliency Maps</li>
+                        <li>Industry experience as Data Science Intern at Shutterstock (Dublin), investigating explainability of CLIP models for generative AI</li>
+                        <li>Active contributor to AI community through invited talks at University of Galway, PyLadies Dublin, and publications on AI Ireland</li>
+                    </ul>
                     <div class="about-highlights">
                         <div class="highlight-item">
                             <i class="fas fa-check-circle"></i>
